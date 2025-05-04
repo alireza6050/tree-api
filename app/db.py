@@ -1,5 +1,5 @@
+# Initializes the database by creating tables defined in models.py
 from app.database import Base, engine
-from app import models
 
 def init_db():
     Base.metadata.create_all(bind=engine)
